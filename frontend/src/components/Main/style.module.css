@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+       --padding-default: 5rem 5rem 0 5rem;
+       --size-font-size: 1.2rem;
+       --font-public: 'Inter', sans-serif;
+       --font-weight-paragraph: 900;
+
+}
+
+.h1{
+       text-align: center;
+       font-family: var(--font-public);
+       font-size: 5rem;
+       font-weight: 600;
+}
+
+.main_container{
+       padding: var(--padding-default);
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 0px 0px;
+       grid-auto-flow: row;
+       grid-template-areas:
+         ". . ."
+         ". . ."
+         ". . .";
+       }
+.Section_first{
+       display: grid;
+       justify-content: center;
+}
+
+.article_children{
+       border-bottom: 2px solid #ffffff3d;
+}
+.article_paragraph_children>article>p{
+       font-family: var(--font-public);
+       padding: .5rem;
+
+}
